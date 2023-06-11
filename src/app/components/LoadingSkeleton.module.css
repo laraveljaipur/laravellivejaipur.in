@@ -1,0 +1,15 @@
+.loadingSkeleton {
+    display: inline-block;
+  }
+  
+  .skeletonLine {
+    height: 10px;
+    background-color: #ccc;
+    margin-bottom: 10px;
+  }
+  
+  .skeletonLine:last-child {
+    margin-bottom: 0;
+    width: 70%;
+  }
+  

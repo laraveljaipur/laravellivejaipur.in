@@ -15,7 +15,10 @@ const Header = () => {
 			<nav className=' flex justify-between items-center '>
 				<div className='w-40 py-2 font-bold text-3xl'>
 					{/* <span className='text-color-secondary'>Laravellive</span>Jaipur. */}
-					<Image src={Logo} />
+					<Link
+						href='/'>
+						<Image src={Logo} />
+					</Link>
 				</div>
 				<div>
 					<ul className='hidden lg:flex items-center space-x-20'>

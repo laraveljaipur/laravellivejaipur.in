@@ -2,6 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { BsMic } from 'react-icons/bs'
 import FirstMeetup from '../../public/images/first-meetup.jpg'
+import DecMeetupLink from '../../public/images/dec-meetup-laravellivejaipur.png'
 import Sponsers from './components/Sponsers'
 import React from 'react'
 export const metadata = {
@@ -35,8 +36,8 @@ export default function Home() {
 						and developer-friendly features. The community is comprised of passionate Laravel developers, who are committed to sharing knowledge, expertise, and best practices in the field of web
 						development.
 					</p>
-					<a
-						href='#'
+					<Link
+						href='/contact-us'
 						className='inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-color-secondary hover:bg-color-secondary focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900'
 					>
 						Register with community
@@ -47,7 +48,7 @@ export default function Home() {
 								clip-rule='evenodd'
 							></path>
 						</svg>
-					</a>
+					</Link>
 					<a
 						target='_blank'
 						href='https://forms.gle/nQD17cMsDgVosqQP8'
@@ -59,6 +60,12 @@ export default function Home() {
 				<div className='hidden lg:mt-0 lg:col-span-5 lg:flex'>
 					<Image className='rounded-md' src={FirstMeetup} alt='mockup' />
 				</div>
+			</div>
+			<div className='grid max-w-screen-xl px-4 py-8 mx-auto w-52'>
+				<h2 className='text-black'>December Meetups : Tickets Book now</h2>
+				<Link href={"https://allevents.in/jaipur/laravel-live-jaipur-december-chapter-meetup-2023/80001488312317?utm_source=laravellivejaipur.in&utm_medium=social&utm_campaign=website-share&ref=utm-builder"}>
+				<Image src={DecMeetupLink} />
+				</Link>
 			</div>
 			<div>
 				<Sponsers />

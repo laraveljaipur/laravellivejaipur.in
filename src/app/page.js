@@ -62,8 +62,8 @@ export default function Home() {
 				</div>
 			</div>
 			<div className='grid max-w-screen-xl px-4 py-8 mx-auto w-52'>
-				<h2 className='text-black'>December Meetups : Tickets Book now</h2>
-				<Link href={"https://allevents.in/jaipur/laravel-live-jaipur-december-chapter-meetup-2023/80001488312317?utm_source=laravellivejaipur.in&utm_medium=social&utm_campaign=website-share&ref=utm-builder"}>
+				<h2 className='text-black'>January Chapter Meetups : Tickets Book now</h2>
+				<Link href={"https://allevents.in/jaipur/laravel-live-jaipur-january-chapter-meetup-2023/80003104858673?ref=smdl"}>
 				<Image src={DecMeetupLink} />
 				</Link>
 			</div>

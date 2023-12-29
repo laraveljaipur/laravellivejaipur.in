@@ -12,12 +12,12 @@ const Header = () => {
 	}
 	return (
 		<header>
-			<nav className=' flex justify-between items-center '>
+			<nav className=' flex justify-between items-center px-3'>
 				<div className='w-40 py-2 font-bold text-3xl'>
 					{/* <span className='text-color-secondary'>Laravellive</span>Jaipur. */}
 					<Link
 						href='/'>
-						<Image src={Logo} />
+						<Image src={Logo} className=''/>
 					</Link>
 				</div>
 				<div>
@@ -38,22 +38,16 @@ const Header = () => {
 					{!showMobileMenus && <RxTextAlignJustify />}
 				</div>
 				<div className={classNames('bg-slate-800 h-[100vh] absolute inset-0', { hidden: !showMobileMenus })}>
-					<ul className='h-full grid place-items-center py-20'>
+					<ul className='h-full grid place-items-center py-5 border-b-2'>
 						<li className='hover:text-color-secondary font-medium ease-in duration-75'>
-							<a href='/home'>Home</a>
+							<a href='/'>Home</a>
 						</li>
 						<li className='hover:text-color-secondary font-medium ease-in duration-75'>
 							<a href='/meetups'>Meetups</a>
 						</li>
 						<li className='hover:text-color-secondary font-medium ease-in duration-75'>
-							<a href='/home'>Contact Us</a>
-						</li>
-						<li className='hover:text-color-secondary font-medium ease-in duration-75'>
-							<a href='/home'>About Us</a>
-						</li>
-						<li className='hover:text-color-secondary font-medium ease-in duration-75'>
-							<a href='/home'>Join Us</a>
-						</li>
+							<a href='/contact-us'>Contact Us</a>
+						</li> 
 					</ul>
 				</div>
 			</nav>

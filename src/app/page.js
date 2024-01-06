@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { BsMic } from 'react-icons/bs'
+import { FaHandsHelping } from "react-icons/fa";
 import FirstMeetup from '../../public/images/first-meetup.jpg'
 import DecMeetupLink from '../../public/images/dec-meetup-laravellivejaipur.png'
 import Sponsers from './components/Sponsers'
@@ -36,10 +37,10 @@ export default function Home() {
 						and developer-friendly features. The community is comprised of passionate Laravel developers, who are committed to sharing knowledge, expertise, and best practices in the field of web
 						development.
 					</p>
-					<div className='flex items-center flex-wrap tagline-mobile'>
+					<div className='flex items-center flex-wrap tagline-mobile gap-3'>
 						<Link
 							href='/contact-us'
-							className='mb-4 inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-color-secondary hover:bg-color-secondary focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900'
+							className='mb-4 inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800'
 						>
 							Register with community
 							<svg className='w-5 h-5 ml-2 -mr-1' fill='currentColor' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'>
@@ -56,6 +57,13 @@ export default function Home() {
 							className='mb-4 inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800'
 						>
 							Submit talk <BsMic />
+						</a>
+						<a
+							target='_blank'
+							href='https://forms.gle/nQD17cMsDgVosqQP8'
+							className='mb-4 inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-color-secondary hover:bg-color-secondary focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900'
+						>
+							Sponsership? <FaHandsHelping />
 						</a>
 					</div>
 				</div>

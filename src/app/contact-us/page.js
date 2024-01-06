@@ -33,6 +33,9 @@ const ConatcUS = () => {
 							<span>Linked In</span>
 						</Link>
 					</div>
+					<h1 class='text-5xl font-semibold text-blue-500'>Write us on</h1>
+					<a href="mailto:contact@laravellivejaipur.in" className="text-black">contact@laravellivejaipur.in</a>
+
 				</div>
 			</div>
 		</section>

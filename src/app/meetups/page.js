@@ -2,11 +2,20 @@ import Link from 'next/link'
 import React, { Suspense } from 'react'
 import Loading from '../loading'
 import Image from 'next/image' 
+import dayjs from 'dayjs';
 export const metadata = {
 	title: 'Meetups : Laravel Live Jaipur - Find your community',
 	description: 'Meetups : Laravel Live Jaipur - Find your community in Jaipur',
 }
 const Meetups = () => {
+
+	const meetups = [
+		{
+			title: "Laravel Live Jaipur - January Chapter Meetup - 2024",
+			date: "2024-01-07"
+		}
+	]
+
 	return (
 		<div>
 			<Suspense fallback={<Loading />}>
@@ -14,7 +23,7 @@ const Meetups = () => {
 					<div className='grid xl:grid-cols-4 lg:grid-cols-3 sm:grid-cols-2 bg-center bg-cover bg-no-repeat py-20 gap-4 justify-center sm:justify-start'>
 						{
 
-							new Array(1).fill({}).map((record, index) => {
+meetups.map((record, index) => {
 								return (
 									<div key={index} className='max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700'>
 										<Link href='https://allevents.in/jaipur/laravel-live-jaipur-january-chapter-meetup-2024/80003104858673' target='_blank'>
@@ -30,11 +39,11 @@ const Meetups = () => {
 											<Link href='https://allevents.in/jaipur/laravel-live-jaipur-january-chapter-meetup-2024/80003104858673' target='_blank'>
 												<div className='flex items-center flex-col sm:flex-row'>
 													<figcaption className='text-center sm:w-[60px] w-full sm:block flex'>
-														<span className='text-red-500 sm:mr-0 mr-2'>JAN</span>
-														<span className='block text-black'>2024</span>
+														<span className='text-red-500 sm:mr-0 mr-2'>{dayjs(record.date).format('MMM')}</span>
+														<span className='block text-black'>{dayjs(record.date).year()}</span>
 													</figcaption>
 													<h5 className='sm:text-md text-md font-bold tracking-tight text-gray-900 dark:text-white sm:w-[calc(100%_-_60px)] w-full'>
-													Laravel Live Jaipur - January Chapter Meetup - 2024
+													{record.title}
 													</h5>
 												</div>
 											</Link>

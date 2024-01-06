@@ -37,26 +37,26 @@ export default function Home() {
 						development.
 					</p>
 					<div className='flex items-center flex-wrap tagline-mobile'>
-					<Link
-						href='/contact-us'
-						className='mb-4 inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-color-secondary hover:bg-color-secondary focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900'
-					>
-						Register with community
-						<svg className='w-5 h-5 ml-2 -mr-1' fill='currentColor' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'>
-							<path
-								fill-rule='evenodd'
-								d='M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z'
-								clip-rule='evenodd'
-							></path>
-						</svg>
-					</Link>
-					<a
-						target='_blank'
-						href='https://forms.gle/nQD17cMsDgVosqQP8'
-						className='mb-4 inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800'
-					>
-						Submit talk <BsMic />
-					</a>
+						<Link
+							href='/contact-us'
+							className='mb-4 inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-color-secondary hover:bg-color-secondary focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900'
+						>
+							Register with community
+							<svg className='w-5 h-5 ml-2 -mr-1' fill='currentColor' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'>
+								<path
+									fill-rule='evenodd'
+									d='M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z'
+									clip-rule='evenodd'
+								></path>
+							</svg>
+						</Link>
+						<a
+							target='_blank'
+							href='https://forms.gle/nQD17cMsDgVosqQP8'
+							className='mb-4 inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800'
+						>
+							Submit talk <BsMic />
+						</a>
 					</div>
 				</div>
 				<div className='hidden lg:mt-0 lg:col-span-5 lg:flex'>
@@ -64,12 +64,19 @@ export default function Home() {
 				</div>
 			</div>
 			<div className='sm:bg-white bg-color-primary'>
-			<div className='grid max-w-screen-xl px-4 py-8 mx-auto sm:w-70 w-[250px]'>
-				<h2 className='sm:text-black text-white mb-3'>January Chapter Meetups : <span className='sm:text-black text-color-secondary sm:inline block text-center'>Tickets Book now</span></h2>
-				<Link href={"https://allevents.in/jaipur/laravel-live-jaipur-january-chapter-meetup-2023/80003104858673?ref=smdl"}>
-				<Image src={DecMeetupLink} />
-				</Link>
-			</div>
+				<div className='grid max-w-screen-xl px-4 py-8 mx-auto sm:w-70 '>
+					<h2 className='sm:text-black text-white mb-3'>January Chapter Meetups : <span className='sm:text-black text-color-secondary sm:inline block text-center'>Tickets Book now</span></h2>
+					<iframe
+						src='https://allevents.in/manage/tickets/book.php?event_id=80003104858673&auto_fill=1&platform=iframe&hide_details=1'
+						style={{ width: '100%', height: '518px', border: '1px solid #efefef' }}
+					></iframe>
+					<span className='consent-text' style={{ fontSize: '12px' }}>
+						Powered by <a target='_blank' href='https://allevents.in/manage/create.php?utm_source=booking-plugin&utm_campaign=21671497&utm_medium=plugin&utm_content=create'>
+							<img src='https://cdn2.allevents.in/transup/a4/b7dd5e5fdb47708041855344e26645/logo-with-glow-1-.png' width='90' alt='AllEvents.in' />
+						</a>
+					</span>
+
+				</div>
 			</div>
 			<div>
 				<Sponsers />

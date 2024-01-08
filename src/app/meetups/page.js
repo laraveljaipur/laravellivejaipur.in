@@ -12,7 +12,8 @@ const Meetups = () => {
 	const meetups = [
 		{
 			title: "Laravel Live Jaipur - January Chapter Meetup - 2024",
-			date: "2024-01-07"
+			date: "2024-01-07",
+			thumbnail: "/images/meetups/January2024ChapterMeetup.png"
 		}
 	]
 
@@ -28,9 +29,9 @@ meetups.map((record, index) => {
 									<div key={index} className='max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700'>
 										<Link href='https://allevents.in/jaipur/laravel-live-jaipur-january-chapter-meetup-2024/80003104858673' target='_blank'>
 											<Image
-												src={'/images/meetups/JanuaryChapterMeetup.png'}
+												src={record.thumbnail}
 												className=''
-												alt='LaravelJaipurJanuaryChapterMeetup'
+												alt={record.title}
 												width={380}
 												height={200}
 											/>

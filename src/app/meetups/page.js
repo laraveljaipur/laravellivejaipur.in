@@ -14,6 +14,16 @@ const Meetups = () => {
 			title: "Laravel Live Jaipur - January Chapter Meetup - 2024",
 			date: "2024-01-07",
 			thumbnail: "/images/meetups/January2024ChapterMeetup.png"
+		},
+		{
+			title: "Laravel Live Jaipur - December Chapter Meetup - 2023",
+			date: "2023-12-02",
+			thumbnail: "/images/meetups/Dec2023ChapterMeetup.png"
+		},
+		{
+			title: "Laravel Live Jaipur - May Chapter Meetup - 2023",
+			date: "2023-05-27",
+			thumbnail: "/images/meetups/May2023ChapterMeetup.png"
 		}
 	]
 

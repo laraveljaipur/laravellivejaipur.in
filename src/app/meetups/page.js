@@ -13,17 +13,20 @@ const Meetups = () => {
 		{
 			title: "Laravel Live Jaipur - January Chapter Meetup - 2024",
 			date: "2024-01-07",
-			thumbnail: "/images/meetups/January2024ChapterMeetup.png"
+			thumbnail: "/images/meetups/January2024ChapterMeetup.png",
+			ticketLink: "https://allevents.in/jaipur/laravel-live-jaipur-january-chapter-meetup-2024/80003104858673"
 		},
 		{
 			title: "Laravel Live Jaipur - December Chapter Meetup - 2023",
 			date: "2023-12-02",
-			thumbnail: "/images/meetups/Dec2023ChapterMeetup.png"
+			thumbnail: "/images/meetups/Dec2023ChapterMeetup.png",
+			ticketLink: "#"
 		},
 		{
 			title: "Laravel Live Jaipur - May Chapter Meetup - 2023",
 			date: "2023-05-27",
-			thumbnail: "/images/meetups/May2023ChapterMeetup.png"
+			thumbnail: "/images/meetups/May2023ChapterMeetup.png",
+			ticketLink: "#"
 		}
 	]
 
@@ -37,7 +40,7 @@ const Meetups = () => {
 meetups.map((record, index) => {
 								return (
 									<div key={index} className='max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700'>
-										<Link href='https://allevents.in/jaipur/laravel-live-jaipur-january-chapter-meetup-2024/80003104858673' target='_blank'>
+										<Link href={record.ticketLink} target='_blank'>
 											<Image
 												src={record.thumbnail}
 												className=''
@@ -47,7 +50,7 @@ meetups.map((record, index) => {
 											/>
 										</Link>
 										<div className='p-5 px-2 py-3'>
-											<Link href='https://allevents.in/jaipur/laravel-live-jaipur-january-chapter-meetup-2024/80003104858673' target='_blank'>
+											<Link href={record.ticketLink} target='_blank'>
 												<div className='flex items-center flex-col sm:flex-row'>
 													<figcaption className='text-center sm:w-[60px] w-full sm:block flex'>
 														<span className='text-red-500 sm:mr-0 mr-2'>{dayjs(record.date).format('MMM')}</span>

@@ -27,6 +27,9 @@ export const metadata = {
 }
 
 export default function Home() {
+
+	const ticketsEnabled = false
+
 	return (
 		<section className='bg-white dark:bg-gray-900'>
 			<div className='grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12'>
@@ -71,21 +74,26 @@ export default function Home() {
 					<Image className='rounded-md' src={FirstMeetup} alt='mockup' />
 				</div>
 			</div>
-			<div className='sm:bg-white bg-color-primary'>
-				<div className='grid max-w-screen-xl px-4 py-8 mx-auto sm:w-70 '>
-					<h2 className='sm:text-black text-white mb-3'>January Chapter Meetups : <span className='sm:text-black text-color-secondary sm:inline block text-center'>Tickets Book now</span></h2>
-					<iframe
-						src='https://allevents.in/manage/tickets/book.php?event_id=80003104858673&auto_fill=1&platform=iframe&hide_details=1'
-						style={{ width: '100%', height: '518px', border: '1px solid #efefef' }}
-					></iframe>
-					<span className='consent-text' style={{ fontSize: '12px' }}>
-						Powered by <a target='_blank' href='https://allevents.in/manage/create.php?utm_source=booking-plugin&utm_campaign=21671497&utm_medium=plugin&utm_content=create'>
-							<img src='https://cdn2.allevents.in/transup/a4/b7dd5e5fdb47708041855344e26645/logo-with-glow-1-.png' width='90' alt='AllEvents.in' />
-						</a>
-					</span>
+			{
+				ticketsEnabled &&
+				<div className='sm:bg-white bg-color-primary'>
+					<div className='grid max-w-screen-xl px-4 py-8 mx-auto sm:w-70 '>
+						<h2 className='sm:text-black text-white mb-3'>January Chapter Meetups : <span className='sm:text-black text-color-secondary sm:inline block text-center'>Tickets Book now</span></h2>
+						<iframe
+							src='https://allevents.in/manage/tickets/book.php?event_id=80003104858673&auto_fill=1&platform=iframe&hide_details=1'
+							style={{ width: '100%', height: '518px', border: '1px solid #efefef' }}
+						></iframe>
+						<span className='consent-text' style={{ fontSize: '12px' }}>
+							Powered by <a target='_blank' href='https://allevents.in/manage/create.php?utm_source=booking-plugin&utm_campaign=21671497&utm_medium=plugin&utm_content=create'>
+								<img src='https://cdn2.allevents.in/transup/a4/b7dd5e5fdb47708041855344e26645/logo-with-glow-1-.png' width='90' alt='AllEvents.in' />
+							</a>
+						</span>
 
+					</div>
 				</div>
-			</div>
+
+			}
+
 			<div>
 				<Sponsers />
 			</div>

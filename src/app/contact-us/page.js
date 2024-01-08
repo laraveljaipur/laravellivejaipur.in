@@ -1,6 +1,13 @@
 import Link from 'next/link'
 import React from 'react'
 
+export const metadata = {
+	title: 'Laravel Live Jaipur - Find your community',
+	description: 'Laravel Live Jaipur - Find your community in Jaipur',
+	keywords: ['Laravel Live Jaipur', ' Find your community in Jaipur', 'laravellivejaipur'],
+	metadataBase: new URL('https://www.laravellivejaipur.in')
+}
+
 const ConatcUS = () => {
 	return (
 		<section class='bg-white dark:bg-gray-900'>

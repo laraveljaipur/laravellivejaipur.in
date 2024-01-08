@@ -10,20 +10,7 @@ export const metadata = {
 	title: 'Laravel Live Jaipur - Find your community',
 	description: 'Laravel Live Jaipur - Find your community in Jaipur',
 	keywords: ['Laravel Live Jaipur', ' Find your community in Jaipur', 'laravellivejaipur'],
-	metadataBase: new URL('https://www.laravellivejaipur.in'),
-	images: [
-		{
-			url: 'https://nextjs.org/og.png',
-			width: 800,
-			height: 600,
-		},
-		{
-			url: 'https://nextjs.org/og-alt.png',
-			width: 1800,
-			height: 1600,
-			alt: 'My custom alt',
-		},
-	],
+	metadataBase: new URL('https://www.laravellivejaipur.in')
 }
 
 export default function Home() {
@@ -61,13 +48,13 @@ export default function Home() {
 						>
 							Submit talk <BsMic />
 						</a>
-						<a
+						<Link
 							target='_blank'
-							href='https://forms.gle/nQD17cMsDgVosqQP8'
+							href='/contact-us'
 							className='mb-4 inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-color-secondary hover:bg-color-secondary focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900'
 						>
 							Sponsership? <FaHandsHelping />
-						</a>
+						</Link>
 					</div>
 				</div>
 				<div className='hidden lg:mt-0 lg:col-span-5 lg:flex'>

@@ -15,7 +15,7 @@ export const metadata = {
 
 export default function Home() {
 
-	const ticketsEnabled = false
+	const ticketsEnabled = true
 
 	return (
 		<section className='bg-white dark:bg-gray-900'>
@@ -65,9 +65,9 @@ export default function Home() {
 				ticketsEnabled &&
 				<div className='sm:bg-white bg-color-primary'>
 					<div className='grid max-w-screen-xl px-4 py-8 mx-auto sm:w-70 '>
-						<h2 className='sm:text-black text-white mb-3'>January Chapter Meetups : <span className='sm:text-black text-color-secondary sm:inline block text-center'>Tickets Book now</span></h2>
+						<h2 className='sm:text-black text-white mb-3'>April Chapter Meetups : <span className='sm:text-black text-color-secondary sm:inline block text-center'>Tickets Book now</span></h2>
 						<iframe
-							src='https://allevents.in/manage/tickets/book.php?event_id=80003104858673&auto_fill=1&platform=iframe&hide_details=1'
+							src='https://allevents.in/manage/tickets/book.php?event_id=80001696912222&auto_fill=1&platform=iframe&hide_details=1'
 							style={{ width: '100%', height: '518px', border: '1px solid #efefef' }}
 						></iframe>
 						<span className='consent-text' style={{ fontSize: '12px' }}>

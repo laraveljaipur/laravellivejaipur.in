@@ -11,10 +11,16 @@ const Meetups = () => {
 
 	const meetups = [
 		{
+			title: "Laravel Live Jaipur - April Chapter Meetup - 2024",
+			date: "2024-04-27",
+			thumbnail: "/images/meetups/April2024ChapterMeetup.png",
+			ticketLink: "https://allevents.in/jaipur/laravel-live-jaipur-april-chapter-meetup-2024/80001696912222?ref=eventlist-ls-selling-fast"
+		},
+		{
 			title: "Laravel Live Jaipur - January Chapter Meetup - 2024",
 			date: "2024-01-07",
 			thumbnail: "/images/meetups/January2024ChapterMeetup.png",
-			ticketLink: "https://allevents.in/jaipur/laravel-live-jaipur-january-chapter-meetup-2024/80003104858673"
+			ticketLink: "#"
 		},
 		{
 			title: "Laravel Live Jaipur - December Chapter Meetup - 2023",

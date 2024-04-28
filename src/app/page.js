@@ -3,7 +3,6 @@ import Link from 'next/link'
 import { BsMic } from 'react-icons/bs'
 import { FaHandsHelping } from "react-icons/fa";
 import FirstMeetup from '../../public/images/first-meetup.jpg'
-import DecMeetupLink from '../../public/images/dec-meetup-laravellivejaipur.png'
 import Sponsers from './components/Sponsers'
 import React from 'react'
 export const metadata = {
@@ -23,8 +22,8 @@ export default function Home() {
 				<div className='mr-auto place-self-center lg:col-span-7'>
 					<h1 className='bg-clip-text max-w-2xl mb-4 text-3xl text-color-secondary font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white'>Laravel Live Jaipur</h1>
 					<p className='max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400'>
-						Laravel Jaipur Community is an open-source community based in Jaipur, India. It is dedicated to promoting and supporting the Laravel PHP framework, which is known for its elegant syntax
-						and developer-friendly features. The community is comprised of passionate Laravel developers, who are committed to sharing knowledge, expertise, and best practices in the field of web
+						Laravel Jaipur Community is an open-source community based in Jaipur, India. It is dedicated to promoting and supporting the Laravel PHP framework, known for its elegant syntax
+						and developer-friendly features. The community comprises passionate Laravel developers committed to sharing knowledge, expertise, and best practices in web
 						development.
 					</p>
 					<div className='flex items-center flex-wrap tagline-mobile gap-3'>
@@ -65,7 +64,7 @@ export default function Home() {
 				ticketsEnabled &&
 				<div className='sm:bg-white bg-color-primary'>
 					<div className='grid max-w-screen-xl px-4 py-8 mx-auto sm:w-70 '>
-						<h2 className='sm:text-black text-white mb-3'>April Chapter Meetups : <span className='sm:text-black text-color-secondary sm:inline block text-center'>Tickets Book now</span></h2>
+						{/* <h2 className='sm:text-black text-white mb-3'>April Chapter Meetups : <span className='sm:text-black text-color-secondary sm:inline block text-center'>Tickets Book now</span></h2> */}
 						<iframe
 							src='https://allevents.in/manage/tickets/book.php?event_id=80001696912222&auto_fill=1&platform=iframe&hide_details=1'
 							style={{ width: '100%', height: '518px', border: '1px solid #efefef' }}

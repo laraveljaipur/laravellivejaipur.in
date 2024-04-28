@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { BsMic } from 'react-icons/bs'
 import { FaHandsHelping } from "react-icons/fa";
 import FirstMeetup from '../../public/images/first-meetup.jpg'
-import Sponsers from './components/Sponsers'
+import Sponsors from "./components/Sponsors";
 import React from 'react'
 export const metadata = {
 	title: 'Laravel Live Jaipur - Find your community',
@@ -81,7 +81,7 @@ export default function Home() {
 			}
 
 			<div>
-				<Sponsers />
+				<Sponsors />
 			</div>
 		</section>
 	)

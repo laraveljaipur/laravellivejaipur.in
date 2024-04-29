@@ -60,7 +60,7 @@ meetups.map((record, index) => {
 												<div className='flex items-center flex-col sm:flex-row'>
 													<figcaption className='text-center sm:w-[60px] w-full sm:block flex'>
 														<span className='text-red-500 sm:mr-0 mr-2'>{dayjs(record.date).format('MMM')}</span>
-														<span className='block text-black'>{dayjs(record.date).year()}</span>
+														<span className='block text-black dark:text-white'>{dayjs(record.date).year()}</span>
 													</figcaption>
 													<h5 className='sm:text-md text-md font-bold tracking-tight text-gray-900 dark:text-white sm:w-[calc(100%_-_60px)] w-full'>
 													{record.title}

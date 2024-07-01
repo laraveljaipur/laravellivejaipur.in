@@ -7,8 +7,8 @@
 	.st1{fill:#009EE0;}
 	.st2{fill:#437E08;}
 	.st3{fill:#727272;}
-	.st4{fill-rule:evenodd;clip-rule:evenodd;fill:#F78F1E;}
-	.st5{fill-rule:evenodd;clip-rule:evenodd;fill:#D8D8D8;}
+	.st4{fill-rule:evenodd;clipRule:evenodd;fill:#F78F1E;}
+	.st5{fill-rule:evenodd;clipRule:evenodd;fill:#D8D8D8;}
 </style>
 <g>
 	<path class="st0" d="M151,78.9l-3.1,17.6h-2.8l3.1-17.6h-6.4l0.4-2.5H158l-0.4,2.5C157.6,78.9,151,78.9,151,78.9z"/>

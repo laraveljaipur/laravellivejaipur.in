@@ -3,7 +3,6 @@ import Link from 'next/link'
 import { BsMic } from 'react-icons/bs'
 import { FaHandsHelping } from "react-icons/fa";
 import FirstMeetup from '../../public/images/first-meetup.jpg'
-import DecMeetupLink from '../../public/images/dec-meetup-laravellivejaipur.png'
 import Sponsers from './components/Sponsers'
 import React from 'react'
 export const metadata = {
@@ -37,7 +36,7 @@ export default function Home() {
 								<path
 									fill-rule='evenodd'
 									d='M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z'
-									clip-rule='evenodd'
+									clipRule='evenodd'
 								></path>
 							</svg>
 						</Link>
@@ -67,7 +66,7 @@ export default function Home() {
 					<div className='grid max-w-screen-xl px-4 py-8 mx-auto sm:w-70 '>
 						<h2 className='sm:text-black text-white mb-3'>April Chapter Meetups : <span className='sm:text-black text-color-secondary sm:inline block text-center'>Tickets Book now</span></h2>
 						<iframe
-							src='https://allevents.in/manage/tickets/book.php?event_id=80001696912222&auto_fill=1&platform=iframe&hide_details=1'
+							src='https://allevents.in/manage/tickets/book.php?event_id=80003195112855&auto_fill=1&platform=iframe&hide_details=1'
 							style={{ width: '100%', height: '518px', border: '1px solid #efefef' }}
 						></iframe>
 						<span className='consent-text' style={{ fontSize: '12px' }}>

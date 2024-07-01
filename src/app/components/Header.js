@@ -17,7 +17,7 @@ const Header = () => {
 					{/* <span className='text-color-secondary'>Laravellive</span>Jaipur. */}
 					<Link
 						href='/'>
-						<Image src={Logo} className=''/>
+						<Image src={Logo} alt="Laravel Live"/>
 					</Link>
 				</div>
 				<div>

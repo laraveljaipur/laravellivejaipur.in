@@ -15,7 +15,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
 	return (
 		<html lang='en'>
-			<body className={'container bg-color-primary tracking-wider text-white'}>
+			<body className={'container bg-color-primary tracking-wider text-white min-h-screen'}>
 				<Header />
 				<main className=''>{children}</main>
 				<GoogleAnalytics gaId="G-HW1G0EHJXP" />

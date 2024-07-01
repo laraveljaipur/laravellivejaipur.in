@@ -14,7 +14,7 @@ export const metadata = {
 
 export default function Home() {
 
-	const ticketsEnabled = false
+	const ticketsEnabled = true
 
 	return (
 		<section className='bg-white dark:bg-gray-900'>

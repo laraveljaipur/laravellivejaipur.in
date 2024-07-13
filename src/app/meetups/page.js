@@ -1,8 +1,10 @@
+"use client"
 import Link from 'next/link'
 import React, { Suspense } from 'react'
 import Loading from '../loading'
 import Image from 'next/image' 
 import dayjs from 'dayjs';
+import AllEventsEmbed from '../components/AllEventsEmbed';
 export const metadata = {
 	title: 'Meetups : Laravel Live Jaipur - Find your community',
 	description: 'Meetups : Laravel Live Jaipur - Find your community in Jaipur',
@@ -43,44 +45,9 @@ const Meetups = () => {
 	]
 
 	return (
-		<div>
+		<div className=''>
 			<Suspense fallback={<Loading />}>
-				<section className='bg-white dark:bg-gray-900 p-4'>
-					<div className='grid xl:grid-cols-4 lg:grid-cols-3 sm:grid-cols-2 bg-center bg-cover bg-no-repeat py-20 gap-4 justify-center sm:justify-start'>
-						{
-
-meetups.map((record, index) => {
-								return (
-									<div key={index} className='max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700'>
-										<Link href={record.ticketLink} target='_blank'>
-											<Image
-												src={record.thumbnail}
-												className=''
-												alt={record.title}
-												width={380}
-												height={200}
-											/>
-										</Link>
-										<div className='p-5 px-2 py-3'>
-											<Link href={record.ticketLink} target='_blank'>
-												<div className='flex items-center flex-col sm:flex-row'>
-													<figcaption className='text-center sm:w-[60px] w-full sm:block flex'>
-														<span className='text-red-500 sm:mr-0 mr-2'>{dayjs(record.date).format('MMM')}</span>
-														<span className='block text-black dark:text-white'>{dayjs(record.date).year()}</span>
-													</figcaption>
-													<h5 className='sm:text-md text-md font-bold tracking-tight text-gray-900 dark:text-white sm:w-[calc(100%_-_60px)] w-full'>
-													{record.title}
-													</h5>
-												</div>
-											</Link>
-										</div>
-									</div> 
-								)
-							})
-						}
-						
-					</div>
-				</section>
+			<AllEventsEmbed />
 			</Suspense>
 		</div>
 	)
